@@ -1,11 +1,9 @@
-import Home from './components/Home.vue';
-import Register from './components/Register.vue';
-import Login from './components/Login.vue';
+
 
 const routes = [
-    { path: '/', component: Home },
-    { path: '/1', component: Register },
-    { path: '/2', component: Login },
+  { path: "/", component: () => import("@/components/Home.vue") },
+  { path: "/1", component: () => import("@/components/Register.vue") },
+  { path: "/2", component: () => import("@/components/Login.vue") },
 ];
 
 export default routes;
