@@ -4,8 +4,8 @@ import Login from './components/Login.vue';
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/register', component: Register },
-    { path: '/login', component: Login },
+    { path: '/1', component: Register },
+    { path: '/2', component: Login },
 ];
 
 export default routes;
